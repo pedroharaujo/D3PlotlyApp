@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("https://pedroaraujo94.pythonanywhere.com/process", {
             method: "POST",
             body: formData,
+            headers: {
+                'Access-Control-Allow-Origin': 'https://pedroharaujo.github.io/D3PlotlyApp/'
+            },
         })
             .then((response) => {
                 if (!response.ok) {
