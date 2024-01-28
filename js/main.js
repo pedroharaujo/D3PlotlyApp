@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData();
         formData.append("file", file);
 
-        fetch("https://pedroaraujo94.pythonanywhere.com:5000/process", {
+        fetch("https://pedroaraujo94.pythonanywhere.com/process", {
             method: "POST",
             body: formData,
         })

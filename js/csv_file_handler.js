@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData();
         formData.append("file", file);
 
-        fetch('https://pedroaraujo94.pythonanywhere.com:5000/CSVtoJson', {
+        fetch('https://pedroaraujo94.pythonanywhere.com/CSVtoJson', {
             method: 'POST',
             body: formData
         })

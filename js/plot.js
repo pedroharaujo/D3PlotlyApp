@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data: scaledData,
             distance: calculatedDistance
         };
-        return fetch('https://pedroaraujo94.pythonanywhere.com:5000/findPeaks', {
+        return fetch('https://pedroaraujo94.pythonanywhere.com/findPeaks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
