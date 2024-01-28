@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             method: "POST",
             body: formData,
             headers: {
-                'Access-Control-Allow-Origin': 'https://pedroharaujo.github.io/D3PlotlyApp/'
+                'Access-Control-Allow-Origin': 'https://pedroharaujo.github.io'
             },
         })
             .then((response) => {
