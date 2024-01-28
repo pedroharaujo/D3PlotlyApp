@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data: selectedData,
             features_weights: featuresWeights
         };
-        return fetch('http://127.0.0.1:5000/scale', {
+        return fetch('https://pedroaraujo94.pythonanywhere.com:5000/scale', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
