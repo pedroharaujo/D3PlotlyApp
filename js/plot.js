@@ -50,9 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     dataDropdown.addEventListener("change", function () {
         const selectedDataset = dataDropdown.value;
+        const storedDataSets = JSON.parse(localStorage.getItem("dataSets")) || {};
+
         if (selectedDataset) {
             // Update the session storage with the selected dataset
-            const storedDataSets = JSON.parse(localStorage.getItem("dataSets")) || {};
             sessionStorage.setItem("selectedData", JSON.stringify(storedDataSets[selectedDataset]));
             data = storedDataSets[selectedDataset];
             features = Object.keys(data).filter(key => key !== "x_values" && key !== "tuples");
