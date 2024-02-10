@@ -55,9 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update the session storage with the selected dataset
             sessionStorage.setItem("selectedData", JSON.stringify(storedDataSets[selectedDataset]));
             data = storedDataSets[selectedDataset];
-            const firstKey = Object.keys(data)[0];
-            console.log('DATA0: ', Object.keys(data)[0]);
-            data = data[firstKey];
             features = Object.keys(data[0]).filter(key => key !== "x_values" && key !== "tuples");
         }
     });
