@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData();
         formData.append("file", file);
 
-        fetch("https://pedroaraujo94.pythonanywhere.com/process", {
+        fetch("https://flask-api-efnqmcjjla-ew.a.run.app/process", {
             method: "POST",
             body: formData,
             headers: {

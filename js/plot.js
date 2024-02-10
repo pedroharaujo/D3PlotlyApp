@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data: scaledData,
             distance: calculatedDistance
         };
-        return fetch('https://pedroaraujo94.pythonanywhere.com/findPeaks', {
+        return fetch('https://flask-api-efnqmcjjla-ew.a.run.app/findPeaks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
