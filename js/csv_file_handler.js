@@ -16,7 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         fetch('https://flask-api-efnqmcjjla-ew.a.run.app/CSVtoJson', {
             method: 'POST',
-            body: formData
+            body: formData,
+            headers: {
+                'Access-Control-Allow-Origin': 'https://pedroharaujo.github.io'
+            }
         })
             .then((response) => {
                 if (!response.ok) {
