@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     dataDropdown.addEventListener("change", function () {
         const selectedDataset = dataDropdown.value;
+        console.log('selectedDataset: ', selectedDataset);
         if (selectedDataset) {
             // Update the session storage with the selected dataset
             sessionStorage.setItem("selectedData", JSON.stringify(storedDataSets[selectedDataset]));
